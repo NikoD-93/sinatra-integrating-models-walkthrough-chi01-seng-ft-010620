@@ -1,9 +1,9 @@
 <h1>Your Text Analysis</h1>
 
-<h2>Number of Words: </h2>
+<h2>Number of Words: <%=@text_from_user.split.count%> </h2>
 
-<h2>Vowels: </h2>
+<h2>Vowels: <%=@horrible.vowels%> </h2>
 
-<h2>Consonants: </h2>
+<h2>Consonants: <%=@horrible.consonants%> </h2>
 
-<h2>Most Common Letter: _____ used _____ times</h2>
+<h2>Most Common Letter: <%=@horrible.most_used_letter.keys[0].upcase%>, used <%=@horrible.most_used_letter.values[0] %> times</h2>
